@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		203A68BA85B602B1CADB6898 /* Pods_TempoTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BACC8DEE18E43CEBBBC6A9 /* Pods_TempoTaskTests.framework */; };
+		589B845CA326F5FA6994595F /* Pods_TempoTask_TempoTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2F5E385404461C1949111F /* Pods_TempoTask_TempoTaskUITests.framework */; };
+		B167F31026874712000D85DD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F2FD26874712000D85DD /* BaseViewModel.swift */; };
+		B167F31126874712000D85DD /* SwiftMessagesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F2FF26874712000D85DD /* SwiftMessagesUtils.swift */; };
+		B167F31226874712000D85DD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30126874712000D85DD /* Constant.swift */; };
+		B167F31326874712000D85DD /* ProgressOverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30326874712000D85DD /* ProgressOverlayManager.swift */; };
+		B167F31426874712000D85DD /* NetworkReachabilityManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30526874712000D85DD /* NetworkReachabilityManger.swift */; };
+		B167F31626874712000D85DD /* ErrorObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30826874712000D85DD /* ErrorObj.swift */; };
+		B167F31726874712000D85DD /* MoyaPlugin+ PrintRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30926874712000D85DD /* MoyaPlugin+ PrintRequest.swift */; };
+		B167F31926874712000D85DD /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30B26874712000D85DD /* ErrorResponse.swift */; };
+		B167F31A26874712000D85DD /* MoyaError .swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30C26874712000D85DD /* MoyaError .swift */; };
+		B167F31B26874712000D85DD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30D26874712000D85DD /* Observable.swift */; };
+		B167F31C26874712000D85DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F30F26874712000D85DD /* BaseViewController.swift */; };
+		B167F32126874888000D85DD /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F32026874888000D85DD /* NewsListViewModel.swift */; };
+		B167F323268748A2000D85DD /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F322268748A2000D85DD /* NewsListViewController.swift */; };
+		B167F3252687493C000D85DD /* NewDetalisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F3242687493C000D85DD /* NewDetalisViewModel.swift */; };
+		B167F32726874952000D85DD /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F32626874952000D85DD /* NewsDetailsViewController.swift */; };
+		B167F32C268749B1000D85DD /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F32B268749B1000D85DD /* NewsResponse.swift */; };
+		B167F33326876B9D000D85DD /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F33126876B9D000D85DD /* NewsListCell.swift */; };
+		B167F33426876B9D000D85DD /* NewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B167F33226876B9D000D85DD /* NewsListCell.xib */; };
+		B167F3372687766E000D85DD /* NewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F3362687766E000D85DD /* NewsApi.swift */; };
+		B167F33A2687B3E1000D85DD /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F3392687B3E1000D85DD /* RoundedView.swift */; };
+		B167F33D2687B779000D85DD /* DateFromate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167F33C2687B779000D85DD /* DateFromate.swift */; };
+		B182508A2687442C006F0E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18250892687442C006F0E03 /* AppDelegate.swift */; };
+		B182508C2687442C006F0E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B182508B2687442C006F0E03 /* SceneDelegate.swift */; };
+		B18250912687442C006F0E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182508F2687442C006F0E03 /* Main.storyboard */; };
+		B182509326874431006F0E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B182509226874431006F0E03 /* Assets.xcassets */; };
+		B182509626874431006F0E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182509426874431006F0E03 /* LaunchScreen.storyboard */; };
+		B18250A126874432006F0E03 /* TempoTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18250A026874432006F0E03 /* TempoTaskTests.swift */; };
+		B18250AC26874432006F0E03 /* TempoTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18250AB26874432006F0E03 /* TempoTaskUITests.swift */; };
+		BABBD36263E9B075CE4A3BEB /* Pods_TempoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBB72799252136EA62D2FA1 /* Pods_TempoTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B182509D26874432006F0E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182507E2687442C006F0E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18250852687442C006F0E03;
+			remoteInfo = TempoTask;
+		};
+		B18250A826874432006F0E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B182507E2687442C006F0E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18250852687442C006F0E03;
+			remoteInfo = TempoTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DA6E73945D7E960830464C7 /* Pods-TempoTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTaskTests.release.xcconfig"; path = "Target Support Files/Pods-TempoTaskTests/Pods-TempoTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EBB72799252136EA62D2FA1 /* Pods_TempoTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3B7C0FB5A8DD6B075BE23A /* Pods-TempoTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask.release.xcconfig"; path = "Target Support Files/Pods-TempoTask/Pods-TempoTask.release.xcconfig"; sourceTree = "<group>"; };
+		B167F2FD26874712000D85DD /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B167F2FF26874712000D85DD /* SwiftMessagesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessagesUtils.swift; sourceTree = "<group>"; };
+		B167F30126874712000D85DD /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B167F30326874712000D85DD /* ProgressOverlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressOverlayManager.swift; sourceTree = "<group>"; };
+		B167F30526874712000D85DD /* NetworkReachabilityManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManger.swift; sourceTree = "<group>"; };
+		B167F30826874712000D85DD /* ErrorObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorObj.swift; sourceTree = "<group>"; };
+		B167F30926874712000D85DD /* MoyaPlugin+ PrintRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaPlugin+ PrintRequest.swift"; sourceTree = "<group>"; };
+		B167F30B26874712000D85DD /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		B167F30C26874712000D85DD /* MoyaError .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaError .swift"; sourceTree = "<group>"; };
+		B167F30D26874712000D85DD /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B167F30F26874712000D85DD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B167F32026874888000D85DD /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		B167F322268748A2000D85DD /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		B167F3242687493C000D85DD /* NewDetalisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetalisViewModel.swift; sourceTree = "<group>"; };
+		B167F32626874952000D85DD /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		B167F32B268749B1000D85DD /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		B167F33126876B9D000D85DD /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		B167F33226876B9D000D85DD /* NewsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListCell.xib; sourceTree = "<group>"; };
+		B167F3362687766E000D85DD /* NewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsApi.swift; path = TempoTask/Scen/NewsList/Model/NewsApi.swift; sourceTree = SOURCE_ROOT; };
+		B167F3392687B3E1000D85DD /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		B167F33C2687B779000D85DD /* DateFromate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFromate.swift; sourceTree = "<group>"; };
+		B18250862687442C006F0E03 /* TempoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18250892687442C006F0E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B182508B2687442C006F0E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B18250902687442C006F0E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B182509226874431006F0E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B182509526874431006F0E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B182509726874431006F0E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B182509C26874432006F0E03 /* TempoTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempoTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18250A026874432006F0E03 /* TempoTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoTaskTests.swift; sourceTree = "<group>"; };
+		B18250A226874432006F0E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18250A726874432006F0E03 /* TempoTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempoTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18250AB26874432006F0E03 /* TempoTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoTaskUITests.swift; sourceTree = "<group>"; };
+		B18250AD26874432006F0E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B234AF8AB461BFF55656FB0B /* Pods-TempoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask.debug.xcconfig"; path = "Target Support Files/Pods-TempoTask/Pods-TempoTask.debug.xcconfig"; sourceTree = "<group>"; };
+		CC2C7373B9CD8BA90EC135DB /* Pods-TempoTask-TempoTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask-TempoTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7BACC8DEE18E43CEBBBC6A9 /* Pods_TempoTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2F5E385404461C1949111F /* Pods_TempoTask_TempoTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoTask_TempoTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA907C0B9C6F2576BBAD7E0 /* Pods-TempoTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-TempoTaskTests/Pods-TempoTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEFA70E2DAA8082C446EA134 /* Pods-TempoTask-TempoTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask-TempoTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18250832687442C006F0E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABBD36263E9B075CE4A3BEB /* Pods_TempoTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B182509926874432006F0E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203A68BA85B602B1CADB6898 /* Pods_TempoTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18250A426874432006F0E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589B845CA326F5FA6994595F /* Pods_TempoTask_TempoTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F9E5A566037A930A38A75EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B234AF8AB461BFF55656FB0B /* Pods-TempoTask.debug.xcconfig */,
+				8F3B7C0FB5A8DD6B075BE23A /* Pods-TempoTask.release.xcconfig */,
+				DEFA70E2DAA8082C446EA134 /* Pods-TempoTask-TempoTaskUITests.debug.xcconfig */,
+				CC2C7373B9CD8BA90EC135DB /* Pods-TempoTask-TempoTaskUITests.release.xcconfig */,
+				DDA907C0B9C6F2576BBAD7E0 /* Pods-TempoTaskTests.debug.xcconfig */,
+				3DA6E73945D7E960830464C7 /* Pods-TempoTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98A3DB9985F46CE741FDFCDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBB72799252136EA62D2FA1 /* Pods_TempoTask.framework */,
+				DB2F5E385404461C1949111F /* Pods_TempoTask_TempoTaskUITests.framework */,
+				D7BACC8DEE18E43CEBBBC6A9 /* Pods_TempoTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B167F2FB26874712000D85DD /* BaseApp */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30E26874712000D85DD /* ViewController */,
+				B167F2FC26874712000D85DD /* ViewModel */,
+				B167F2FE26874712000D85DD /* SwiftMessage */,
+				B167F30026874712000D85DD /* Constant */,
+				B167F30226874712000D85DD /* ActivityIndicator */,
+				B167F30426874712000D85DD /* NetworkLayer */,
+			);
+			path = BaseApp;
+			sourceTree = "<group>";
+		};
+		B167F2FC26874712000D85DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B167F2FD26874712000D85DD /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B167F2FE26874712000D85DD /* SwiftMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B167F2FF26874712000D85DD /* SwiftMessagesUtils.swift */,
+			);
+			path = SwiftMessage;
+			sourceTree = "<group>";
+		};
+		B167F30026874712000D85DD /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30126874712000D85DD /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B167F30226874712000D85DD /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30326874712000D85DD /* ProgressOverlayManager.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		B167F30426874712000D85DD /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30526874712000D85DD /* NetworkReachabilityManger.swift */,
+				B167F30626874712000D85DD /* Model */,
+				B167F30D26874712000D85DD /* Observable.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B167F30626874712000D85DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30826874712000D85DD /* ErrorObj.swift */,
+				B167F30926874712000D85DD /* MoyaPlugin+ PrintRequest.swift */,
+				B167F30B26874712000D85DD /* ErrorResponse.swift */,
+				B167F30C26874712000D85DD /* MoyaError .swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B167F30E26874712000D85DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B167F30F26874712000D85DD /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B167F31D268747F4000D85DD /* Scen */ = {
+			isa = PBXGroup;
+			children = (
+				B167F31E26874853000D85DD /* NewsList */,
+				B167F31F2687485E000D85DD /* NewsDetails */,
+			);
+			path = Scen;
+			sourceTree = "<group>";
+		};
+		B167F31E26874853000D85DD /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				B167F33026874AF9000D85DD /* Model */,
+				B167F32F26874AF0000D85DD /* View */,
+				B167F32E26874AD4000D85DD /* ViewModel */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		B167F31F2687485E000D85DD /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B167F32A2687498F000D85DD /* Model */,
+				B167F32926874988000D85DD /* View */,
+				B167F32826874979000D85DD /* ViewModel */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		B167F32826874979000D85DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B167F3242687493C000D85DD /* NewDetalisViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B167F32926874988000D85DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B167F32626874952000D85DD /* NewsDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B167F32A2687498F000D85DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B167F32E26874AD4000D85DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B167F32026874888000D85DD /* NewsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B167F32F26874AF0000D85DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B167F322268748A2000D85DD /* NewsListViewController.swift */,
+				B167F33526876BAC000D85DD /* NewsCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B167F33026874AF9000D85DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B167F32B268749B1000D85DD /* NewsResponse.swift */,
+				B167F3362687766E000D85DD /* NewsApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B167F33526876BAC000D85DD /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				B167F33126876B9D000D85DD /* NewsListCell.swift */,
+				B167F33226876B9D000D85DD /* NewsListCell.xib */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		B167F3382687B3C9000D85DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B167F33B2687B755000D85DD /* extensions */,
+				B167F3392687B3E1000D85DD /* RoundedView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B167F33B2687B755000D85DD /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B167F33C2687B779000D85DD /* DateFromate.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		B182507D2687442C006F0E03 = {
+			isa = PBXGroup;
+			children = (
+				B18250882687442C006F0E03 /* TempoTask */,
+				B182509F26874432006F0E03 /* TempoTaskTests */,
+				B18250AA26874432006F0E03 /* TempoTaskUITests */,
+				B18250872687442C006F0E03 /* Products */,
+				7F9E5A566037A930A38A75EE /* Pods */,
+				98A3DB9985F46CE741FDFCDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B18250872687442C006F0E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18250862687442C006F0E03 /* TempoTask.app */,
+				B182509C26874432006F0E03 /* TempoTaskTests.xctest */,
+				B18250A726874432006F0E03 /* TempoTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18250882687442C006F0E03 /* TempoTask */ = {
+			isa = PBXGroup;
+			children = (
+				B167F2FB26874712000D85DD /* BaseApp */,
+				B167F3382687B3C9000D85DD /* Utils */,
+				B167F31D268747F4000D85DD /* Scen */,
+				B18250892687442C006F0E03 /* AppDelegate.swift */,
+				B182508B2687442C006F0E03 /* SceneDelegate.swift */,
+				B182508F2687442C006F0E03 /* Main.storyboard */,
+				B182509226874431006F0E03 /* Assets.xcassets */,
+				B182509426874431006F0E03 /* LaunchScreen.storyboard */,
+				B182509726874431006F0E03 /* Info.plist */,
+			);
+			path = TempoTask;
+			sourceTree = "<group>";
+		};
+		B182509F26874432006F0E03 /* TempoTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				B18250A026874432006F0E03 /* TempoTaskTests.swift */,
+				B18250A226874432006F0E03 /* Info.plist */,
+			);
+			path = TempoTaskTests;
+			sourceTree = "<group>";
+		};
+		B18250AA26874432006F0E03 /* TempoTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B18250AB26874432006F0E03 /* TempoTaskUITests.swift */,
+				B18250AD26874432006F0E03 /* Info.plist */,
+			);
+			path = TempoTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B18250852687442C006F0E03 /* TempoTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18250B026874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTask" */;
+			buildPhases = (
+				96E4C8537E86EC70AA466926 /* [CP] Check Pods Manifest.lock */,
+				B18250822687442C006F0E03 /* Sources */,
+				B18250832687442C006F0E03 /* Frameworks */,
+				B18250842687442C006F0E03 /* Resources */,
+				F1BDFA15717FABE6FCE92E50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempoTask;
+			productName = TempoTask;
+			productReference = B18250862687442C006F0E03 /* TempoTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B182509B26874432006F0E03 /* TempoTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18250B326874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTaskTests" */;
+			buildPhases = (
+				4DA55A02EB8627CCF9043672 /* [CP] Check Pods Manifest.lock */,
+				B182509826874432006F0E03 /* Sources */,
+				B182509926874432006F0E03 /* Frameworks */,
+				B182509A26874432006F0E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B182509E26874432006F0E03 /* PBXTargetDependency */,
+			);
+			name = TempoTaskTests;
+			productName = TempoTaskTests;
+			productReference = B182509C26874432006F0E03 /* TempoTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B18250A626874432006F0E03 /* TempoTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18250B626874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTaskUITests" */;
+			buildPhases = (
+				C9496C630A9641253EF5A151 /* [CP] Check Pods Manifest.lock */,
+				B18250A326874432006F0E03 /* Sources */,
+				B18250A426874432006F0E03 /* Frameworks */,
+				B18250A526874432006F0E03 /* Resources */,
+				8604F2A0C2AC2DB8B36D6A78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18250A926874432006F0E03 /* PBXTargetDependency */,
+			);
+			name = TempoTaskUITests;
+			productName = TempoTaskUITests;
+			productReference = B18250A726874432006F0E03 /* TempoTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B182507E2687442C006F0E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B18250852687442C006F0E03 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B182509B26874432006F0E03 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B18250852687442C006F0E03;
+					};
+					B18250A626874432006F0E03 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B18250852687442C006F0E03;
+					};
+				};
+			};
+			buildConfigurationList = B18250812687442C006F0E03 /* Build configuration list for PBXProject "TempoTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B182507D2687442C006F0E03;
+			productRefGroup = B18250872687442C006F0E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B18250852687442C006F0E03 /* TempoTask */,
+				B182509B26874432006F0E03 /* TempoTaskTests */,
+				B18250A626874432006F0E03 /* TempoTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B18250842687442C006F0E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B182509626874431006F0E03 /* LaunchScreen.storyboard in Resources */,
+				B182509326874431006F0E03 /* Assets.xcassets in Resources */,
+				B167F33426876B9D000D85DD /* NewsListCell.xib in Resources */,
+				B18250912687442C006F0E03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B182509A26874432006F0E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18250A526874432006F0E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DA55A02EB8627CCF9043672 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8604F2A0C2AC2DB8B36D6A78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E4C8537E86EC70AA466926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9496C630A9641253EF5A151 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoTask-TempoTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BDFA15717FABE6FCE92E50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoTask/Pods-TempoTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoTask/Pods-TempoTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempoTask/Pods-TempoTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18250822687442C006F0E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B167F32726874952000D85DD /* NewsDetailsViewController.swift in Sources */,
+				B167F32C268749B1000D85DD /* NewsResponse.swift in Sources */,
+				B167F31A26874712000D85DD /* MoyaError .swift in Sources */,
+				B167F31626874712000D85DD /* ErrorObj.swift in Sources */,
+				B167F31026874712000D85DD /* BaseViewModel.swift in Sources */,
+				B167F33326876B9D000D85DD /* NewsListCell.swift in Sources */,
+				B167F31926874712000D85DD /* ErrorResponse.swift in Sources */,
+				B167F31C26874712000D85DD /* BaseViewController.swift in Sources */,
+				B167F31726874712000D85DD /* MoyaPlugin+ PrintRequest.swift in Sources */,
+				B167F32126874888000D85DD /* NewsListViewModel.swift in Sources */,
+				B167F33D2687B779000D85DD /* DateFromate.swift in Sources */,
+				B167F31126874712000D85DD /* SwiftMessagesUtils.swift in Sources */,
+				B182508A2687442C006F0E03 /* AppDelegate.swift in Sources */,
+				B167F3252687493C000D85DD /* NewDetalisViewModel.swift in Sources */,
+				B167F31326874712000D85DD /* ProgressOverlayManager.swift in Sources */,
+				B182508C2687442C006F0E03 /* SceneDelegate.swift in Sources */,
+				B167F3372687766E000D85DD /* NewsApi.swift in Sources */,
+				B167F31B26874712000D85DD /* Observable.swift in Sources */,
+				B167F31226874712000D85DD /* Constant.swift in Sources */,
+				B167F31426874712000D85DD /* NetworkReachabilityManger.swift in Sources */,
+				B167F33A2687B3E1000D85DD /* RoundedView.swift in Sources */,
+				B167F323268748A2000D85DD /* NewsListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B182509826874432006F0E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18250A126874432006F0E03 /* TempoTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18250A326874432006F0E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18250AC26874432006F0E03 /* TempoTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B182509E26874432006F0E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18250852687442C006F0E03 /* TempoTask */;
+			targetProxy = B182509D26874432006F0E03 /* PBXContainerItemProxy */;
+		};
+		B18250A926874432006F0E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18250852687442C006F0E03 /* TempoTask */;
+			targetProxy = B18250A826874432006F0E03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B182508F2687442C006F0E03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18250902687442C006F0E03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B182509426874431006F0E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B182509526874431006F0E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B18250AE26874432006F0E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B18250AF26874432006F0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B18250B126874432006F0E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B234AF8AB461BFF55656FB0B /* Pods-TempoTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B18250B226874432006F0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3B7C0FB5A8DD6B075BE23A /* Pods-TempoTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B18250B426874432006F0E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA907C0B9C6F2576BBAD7E0 /* Pods-TempoTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempoTask.app/TempoTask";
+			};
+			name = Debug;
+		};
+		B18250B526874432006F0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA6E73945D7E960830464C7 /* Pods-TempoTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempoTask.app/TempoTask";
+			};
+			name = Release;
+		};
+		B18250B726874432006F0E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFA70E2DAA8082C446EA134 /* Pods-TempoTask-TempoTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempoTask;
+			};
+			name = Debug;
+		};
+		B18250B826874432006F0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2C7373B9CD8BA90EC135DB /* Pods-TempoTask-TempoTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ484N6M57;
+				INFOPLIST_FILE = TempoTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nour-Hegazy.TempoTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempoTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18250812687442C006F0E03 /* Build configuration list for PBXProject "TempoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18250AE26874432006F0E03 /* Debug */,
+				B18250AF26874432006F0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18250B026874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18250B126874432006F0E03 /* Debug */,
+				B18250B226874432006F0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18250B326874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18250B426874432006F0E03 /* Debug */,
+				B18250B526874432006F0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18250B626874432006F0E03 /* Build configuration list for PBXNativeTarget "TempoTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18250B726874432006F0E03 /* Debug */,
+				B18250B826874432006F0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B182507E2687442C006F0E03 /* Project object */;
+}
